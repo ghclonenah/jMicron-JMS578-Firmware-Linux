@@ -4,7 +4,7 @@ This repo contains F/W for the JMicron578 chip found in many USB3/SATA docks/ada
 
 
 Required software
-I have re-hosted the required files to flash the firmware here for convenience in case they are ever lost to time. You will need to use a Windows machine (I used a VirtualBox VM without issue, just pass through the USB device) to use the JMicron software or you can probably use the Odroid tool on an arm64 sbc (untested).
+I have re-hosted the required files to flash the firmware here for convenience in case they are ever lost to time. You can to use a Windows machine to use the JMicron software or you can use the jms578flash tool.
 
 Process
 The way that this works is that we want to reset all of the configuration memory to be blank (so that the device runs on defaults), and we also want to run a firmware that defaults to sane values and has auto-sleep defaulting to being turned off (some default to 10 minutes).
